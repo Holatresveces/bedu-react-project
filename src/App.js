@@ -1,9 +1,8 @@
-import IndexPage from "./components/pages/Index";
-import ProjectPage from "./components/pages/Project";
+import Content from "./components/Content";
 import CanvasScene from "./components/gl/CanvasScene";
 import { useEffect, useState, useMemo } from "react";
 import ASScroll from "@ashthornton/asscroll";
-import { Routes, Route, useLocation } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 import gsap from "gsap";
 
 const App = () => {
@@ -54,22 +53,7 @@ const App = () => {
         data={data}
         smoothScroll={smoothScroll}
       />
-      <div asscroll-container="true" className="smooth-scroll">
-        <div className="container">
-          <Routes>
-            <Route
-              exact
-              path="/"
-              element={<IndexPage onContentLoaded={onContentLoaded} />}
-            />
-            <Route
-              exact
-              path="/projects/:slug"
-              element={<ProjectPage onContentLoaded={onContentLoaded} />}
-            />
-          </Routes>
-        </div>
-      </div>
+      <Content onContentLoaded={onContentLoaded} />
     </>
   );
 };
