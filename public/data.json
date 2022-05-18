@@ -1,0 +1,44 @@
+{
+  "projects": [
+    {
+      "image": "https://res.cloudinary.com/holatresveces/image/upload/v1636628569/fourjs/img02_y2op82.jpg",
+      "description": "Branded web- and investor relations site for the leading premium PC hardware designer Fractal. Identity made by Kurppa Hosk.",
+      "title": "Fractal",
+      "year": 2018,
+      "slug": "fractal",
+      "content": "Fractal project content"
+    },
+    {
+      "image": "https://res.cloudinary.com/holatresveces/image/upload/v1636628569/fourjs/img01_myjqod.jpg",
+      "description": "Branded web- and investor relations site for the leading premium PC hardware designer Fractal. Identity made by Kurppa Hosk.",
+      "title": "Hazelight",
+      "year": 2018,
+      "slug": "hazelight",
+      "content": "Hazelight project content"
+    },
+    {
+      "image": "https://res.cloudinary.com/holatresveces/image/upload/v1636628569/fourjs/img03_av38xe.jpg",
+      "description": "Branded web- and investor relations site for the leading premium PC hardware designer Fractal. Identity made by Kurppa Hosk.",
+      "title": "Ritual",
+      "year": 2018,
+      "slug": "ritual",
+      "content": "Ritual project content"
+    },
+    {
+      "image": "https://res.cloudinary.com/holatresveces/image/upload/v1636628569/fourjs/img04_revvjx.jpg",
+      "description": "Branded web- and investor relations site for the leading premium PC hardware designer Fractal. Identity made by Kurppa Hosk.",
+      "title": "Egatan",
+      "year": 2018,
+      "slug": "egatan",
+      "content": "Ritual project content"
+    },
+    {
+      "image": "https://res.cloudinary.com/holatresveces/image/upload/v1636628569/fourjs/img06_ga8hdq.jpg",
+      "description": "Branded web- and investor relations site for the leading premium PC hardware designer Fractal. Identity made by Kurppa Hosk.",
+      "title": "Markethype",
+      "year": 2018,
+      "slug": "markethype",
+      "content": "Ritual project content"
+    }
+  ]
+}
