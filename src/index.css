@@ -1,13 +1,155 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background: black;
+  color: white;
+}
+
+.link {
+  color: white;
+  text-transform: uppercase;
+  margin-top: 0.8em;
+  display: flex;
+}
+
+.link a {
+  color: white;
+}
+
+html:not(.has-scroll-init) {
+  overflow: hidden;
+}
+
+.r3f-canvas {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 0;
+  opacity: 1;
+  /* pointer-events: none; */
+}
+
+.loading-overlay {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  opacity: 1;
+  background: black;
+  z-index: 1;
+}
+
+.page {
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+.mounted {
+  opacity: 1;
+}
+
+.container {
+  position: relative;
+}
+
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.button {
+  z-index: 2;
+}
+
+.project {
+  position: relative;
+  display: flex;
+  max-width: 90vw;
+  margin: 0 auto;
+  margin-top: 20vh;
+}
+
+.project:nth-child(even) {
+  justify-content: flex-end;
+}
+
+.project__img {
+  width: 37.5%;
+  opacity: 0;
+}
+
+.project__img img {
+  width: 100%;
+  display: block;
+}
+
+.project__info {
+  position: absolute;
+  top: 0;
+  width: 25%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  left: 37.5%;
+}
+
+.project:nth-child(even) .project__info {
+  right: 37.5%;
+}
+
+.project__info-inner {
+  padding-left: 3.5vw;
+}
+
+.project:nth-child(even) .project__info-inner {
+  padding-left: 0;
+  padding-right: 3.5vw;
+}
+
+.project__title {
+  position: relative;
+  left: -12.5vw;
+  margin-bottom: 0.15em;
+}
+
+.project:nth-child(even) .project__title {
+  left: 0;
+}
+
+.project__year {
+  margin-right: 2.5em;
+  opacity: 0.5;
+}
+
+.project__description {
+  max-width: 20vw;
+  text-transform: uppercase;
+}
+
+.sm {
+  font-size: calc(18px + (1000vw - 6400px) / 1920);
+}
+
+.lg {
+  font-size: calc(64px + (24000vw - 153600px) / 1920);
+}
+
+.content-container {
+  padding: 10px 0;
 }
